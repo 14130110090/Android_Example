@@ -6,13 +6,177 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <Button
+        android:id="@+id/main_bt_rn"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_div_shape"
+        android:text="@string/main_rn"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/main_bt_service"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_div_shape"
+        android:text="启动服务"
+        android:textColor="#FFFFFFFF"
+
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_bt_rn" />
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:addStatesFromChildren="true"-->
+    <!--        android:baselineAligned="true"-->
+    <!--        android:divider="@drawable/list_divider"-->
+    <!--        android:dividerPadding="0dp"-->
+    <!--        android:gravity="right"-->
+    <!--        android:layoutMode="opticalBounds"-->
+    <!--        android:measureWithLargestChild="false"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="30dp"-->
+
+    <!--        android:showDividers="middle"-->
+    <!--        android:weightSum="0"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/MNavigationBar"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/main_bt_rn">-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="1000dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="2"-->
+    <!--            android:background="#FF8247"-->
+    <!--            android:divider="@color/colorPrimary"-->
+    <!--            android:dividerPadding="20dp"-->
+    <!--            android:padding="20dip"-->
+    <!--            android:text="按钮1"-->
+    <!--            android:textColor="#DDC5CD"-->
+    <!--            android:textDirection="anyRtl"-->
+    <!--            android:textSize="20dip"-->
+    <!--            app:layout_position="left_top" />-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="2"-->
+    <!--            android:background="#8B0A50"-->
+    <!--            android:padding="10dip"-->
+    <!--            android:text="按钮2222222222222"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="20dip"-->
+    <!--            app:layout_position="top" />-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="#7CFC00"-->
+    <!--            android:padding="15dip"-->
+    <!--            android:text="按钮333333"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="20dip"-->
+    <!--            app:layout_position="right" />-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="#1E90FF"-->
+    <!--            android:padding="10dip"-->
+    <!--            android:text="按钮4"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="10dip"-->
+    <!--            app:layout_position="right_bottom" />-->
+
+
+    <!--    </LinearLayout>-->
+
+    <!--    <com.example.boxuegu.view.CustomGridView-->
+    <!--        android:id="@+id/customGridView"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layoutMode="opticalBounds"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/MNavigationBar"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/main_bt_rn"-->
+    <!--        app:layout_constraintVertical_bias="0.496">-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="120dp"-->
+    <!--            android:background="#FF8247"-->
+    <!--            android:padding="20dip"-->
+
+    <!--            android:text="按钮1"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="20dip"-->
+
+    <!--            app:layout_position="left_top" />-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="#8B0A50"-->
+    <!--            android:padding="10dip"-->
+    <!--            android:text="按钮2222222222222"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="20dip"-->
+    <!--            app:layout_position="top" />-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="#7CFC00"-->
+    <!--            android:padding="15dip"-->
+    <!--            android:text="按钮333333"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="20dip"-->
+    <!--            app:layout_position="right" />-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="#1E90FF"-->
+    <!--            android:padding="10dip"-->
+    <!--            android:text="按钮4"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="10dip"-->
+    <!--            app:layout_position="right_bottom" />-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="#191970"-->
+    <!--            android:padding="15dip"-->
+    <!--            android:text="按钮5"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="20dip"-->
+    <!--            app:layout_position="right_top" />-->
+
+    <!--        <com.example.boxuegu.view.CustomButton-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content" />-->
+    <!--    </com.example.boxuegu.view.CustomGridView>-->
+
+    <com.example.mnavigationbar.MNavigationBar
+        android:id="@+id/MNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

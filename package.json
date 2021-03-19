@@ -1,0 +1,24 @@
+{
+  "name": "boxuegu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.android.js",
+  "scripts": {
+    "start": "yarn react-native start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/14130110090/Android_Example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/14130110090/Android_Example/issues"
+  },
+  "homepage": "https://github.com/14130110090/Android_Example#readme",
+  "dependencies": {
+    "react": "16.13.1",
+    "react-native": "^0.63.4",
+    "react-native-navigation": "^7.11.0"
+  }
+}

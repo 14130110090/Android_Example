@@ -17,7 +17,7 @@ import com.example.boxuegu.R;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
     TextView tv_version;
 
     @Override
@@ -38,7 +38,6 @@ public class SplashActivity extends AppCompatActivity {
                 info = getPackageManager().getPackageInfo(getPackageName(), 0);
             }
             if (info != null) {
-                Log.i(getLocalClassName(), "结果" + 0b110);
                 tv_version.setText(String.format(getResources().getString(R.string.splash_version), info.versionName));
             }
         } catch (PackageManager.NameNotFoundException e) {
@@ -50,9 +49,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                // TODO: 是不是有直接销毁本页面的跳转方式
                 startActivity(intent);
-                // TODO: 是不是有直接销毁本页面的跳转方式
                 finish();
             }
         };
